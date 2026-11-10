@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 14 * * *"   # todos los días, 9:00 a. m. hora de Lima
   workflow_dispatch:        # botón "Run workflow" para correrlo a mano
+    inputs:
+      completar_pdfs:
+        description: "Completar los PDF (R.J. firmada y extracto El Peruano) de meses anteriores"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -23,18 +28,22 @@ jobs:
           IU_BASE: ${{ github.workspace }}/descargas
         run: |
           out=$(python3 scripts/update_iu.py)
+          if [ "${{ inputs.completar_pdfs }}" = "true" ]; then
+            out="$out"$'\n'"$(python3 scripts/update_iu.py --backfill)"
+          fi
           echo "$out"
-          echo "resultado<<EOF" >> "$GITHUB_OUTPUT"; echo "$out" >> "$GITHUB_OUTPUT"; echo "EOF" >> "$GITHUB_OUTPUT"
+          if echo "$out" | grep -q '^NUEVO'; then echo "cambios=si" >> "$GITHUB_OUTPUT"; fi
+          echo "resumen=$(echo "$out" | grep '^NUEVO' | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
       - name: Regenerar la página
-        if: startsWith(steps.iu.outputs.resultado, 'NUEVO')
+        if: steps.iu.outputs.cambios == 'si'
         env:
           IU_BASE: ${{ github.workspace }}/descargas
         run: python3 scripts/build_site.py --out .
       - name: Guardar cambios
-        if: startsWith(steps.iu.outputs.resultado, 'NUEVO')
+        if: steps.iu.outputs.cambios == 'si'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "Actualiza índices unificados: ${{ steps.iu.outputs.resultado }}"
+          git diff --cached --quiet || git commit -m "Actualiza índices unificados: ${{ steps.iu.outputs.resumen }}"
           git push
