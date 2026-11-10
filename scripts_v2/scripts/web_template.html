@@ -1,0 +1,234 @@
+<title>Índices Unificados INEI</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Índices Unificados de Precios de la Construcción del INEI (base dic 2025 = 100): consulta por código, área y mes, factor Ir/Io y descargas mensuales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: una columna de trabajo; arriba la calculadora Io/Ir, debajo la tabla del mes (códigos × 13 áreas) y al final las descargas por mes. */
+:root{
+  --bg:#f3f5f4; --surface:#ffffff; --ink:#15201d; --muted:#5b6964; --line:#d5dcd9;
+  --brand:#0f4c45; --brand-soft:#e2eeeb; --accent:#c9861a; --accent-soft:#fbf0dc; --empty:#9aa5a1;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-data:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --surface:#172120; --ink:#e4ece9; --muted:#97a6a1; --line:#2b3836;
+  --brand:#5fc0b0; --brand-soft:#1b302d; --accent:#e3a64a; --accent-soft:#2e2615; --empty:#62706c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --surface:#172120; --ink:#e4ece9; --muted:#97a6a1; --line:#2b3836;
+  --brand:#5fc0b0; --brand-soft:#1b302d; --accent:#e3a64a; --accent-soft:#2e2615; --empty:#62706c; color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header{padding-block:36px 4px;display:grid;gap:14px}
+.eyebrow{font-family:var(--f-data);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0;text-wrap:balance}
+.lead{margin:0;max-width:65ch;color:var(--muted)}
+.status{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:14px}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--brand-soft);color:var(--brand);border-radius:999px;padding:4px 12px;font-weight:600}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand)}
+.status a{color:var(--brand)}
+section{display:grid;gap:16px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:8px 16px}
+.sec-head p{margin:0;color:var(--muted);font-size:14px;max-width:65ch}
+/* Calculadora */
+.calc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fields .wide{grid-column:1/-1}
+label{display:grid;gap:5px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+select,input{font:inherit;font-size:15px;text-transform:none;letter-spacing:0;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%;min-width:0}
+select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.result{display:grid;gap:12px;align-content:start}
+.r-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.r-row span{color:var(--muted);font-size:14px}
+.r-row b{font-family:var(--f-data);font-weight:500;font-size:18px;font-variant-numeric:tabular-nums}
+.factor{background:var(--accent-soft);border-radius:8px;padding:14px 16px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.factor span{font-size:14px;font-weight:600}
+.factor b{font-family:var(--f-data);font-size:30px;font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+.factor small{flex-basis:100%;color:var(--muted);font-size:13px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.spark{width:100%;height:70px;display:block}
+/* Tabla */
+.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:end}
+.tools label{flex:1 1 180px}
+.table-box{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;max-height:70vh}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:13px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{position:sticky;top:0;background:var(--surface);font-family:var(--f-data);font-weight:500;font-size:12px;color:var(--muted);text-align:right;z-index:1;box-shadow:inset 0 -1px 0 var(--line)}
+thead th:nth-child(-n+2){text-align:left}
+td.num{text-align:right;font-family:var(--f-data);font-variant-numeric:tabular-nums}
+td.cod{font-family:var(--f-data);color:var(--brand);font-weight:500}
+td.el{white-space:normal;min-width:220px;max-width:320px}
+td.na{color:var(--empty);text-align:center}
+td.up{color:var(--ink)} td.dn{color:var(--brand)}
+tbody tr:hover td{background:var(--brand-soft)}
+th.hl,td.hl{background:var(--accent-soft)}
+.legend{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;margin:0}
+/* Áreas */
+.areas{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 24px;margin:0;padding:0;list-style:none;font-size:14px}
+.areas li{display:flex;gap:10px}
+.areas b{font-family:var(--f-data);font-weight:500;color:var(--brand);min-width:2.2em}
+/* Descargas */
+.dl-box{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.dl td,.dl th{padding:10px 12px}
+.dl thead th{position:static;text-align:left}
+.dl a{color:var(--brand);font-weight:600;text-decoration:none}
+.dl a:hover{text-decoration:underline}
+.dl .miss{color:var(--empty)}
+.dl td.mes{font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:var(--surface);border:0;border-radius:6px;padding:9px 14px;font:inherit;font-weight:600;font-size:14px;text-decoration:none;cursor:pointer}
+footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px;display:grid;gap:8px}
+footer p{margin:0;max-width:80ch}
+footer a{color:var(--brand)}
+@media (prefers-reduced-motion:no-preference){.factor b{transition:color .2s}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">INEI · Base diciembre 2025 = 100 · 13 áreas geográficas</div>
+  <h1>Índices Unificados de Precios de la Construcción</h1>
+  <p class="lead">Consulta los índices del INEI que se usan en la fórmula polinómica para reajustar valorizaciones de obra pública. Cada mes se agregan el CSV, el Excel original del INEI y la Resolución Jefatural publicada en El Peruano.</p>
+  <div class="status"><span class="pill" id="ultimo"></span><span id="rj-ultimo"></span></div>
+</header>
+
+<section id="calculadora" aria-labelledby="h-calc">
+  <div class="sec-head"><h2 id="h-calc">Factor de reajuste Ir/Io</h2>
+    <p>Elige el índice, el área y los dos meses. Io es el índice del mes del presupuesto base e Ir el del mes de la valorización.</p></div>
+  <div class="calc">
+    <div class="fields">
+      <label class="wide" for="c-cod">Índice unificado (código)<select id="c-cod"></select></label>
+      <label class="wide" for="c-area">Área geográfica<select id="c-area"></select></label>
+      <label for="c-base">Mes base (Io)<select id="c-base"></select></label>
+      <label for="c-reaj">Mes de reajuste (Ir)<select id="c-reaj"></select></label>
+      <div class="wide"><svg class="spark" id="spark" role="img" aria-label="Evolución del índice elegido"></svg></div>
+    </div>
+    <div class="result" aria-live="polite">
+      <div class="r-row"><span>Io · <span id="l-base"></span></span><b id="v-base">—</b></div>
+      <div class="r-row"><span>Ir · <span id="l-reaj"></span></span><b id="v-reaj">—</b></div>
+      <div class="factor"><span>Ir / Io</span><b id="v-fac">—</b><small id="v-var"></small></div>
+      <p class="note">El monomio Ir/Io se muestra con 3 decimales como referencia. El coeficiente K de la fórmula polinómica se calcula sumando cada monomio por su coeficiente de incidencia y se redondea a 3 decimales.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tabla" aria-labelledby="h-tabla">
+  <div class="sec-head"><h2 id="h-tabla">Índices del mes por área</h2>
+    <p>Misma disposición que la publicación del INEI: 78 índices por 13 áreas.</p></div>
+  <div class="tools">
+    <label for="t-mes">Mes<select id="t-mes"></select></label>
+    <label for="t-buscar">Buscar código o elemento<input id="t-buscar" type="search" placeholder="ej. 47, cemento, flete"></label>
+    <label for="t-cmp">Comparar con<select id="t-cmp"></select></label>
+  </div>
+  <div class="table-box"><table id="t"><thead></thead><tbody></tbody></table></div>
+  <p class="legend"><span>(*) Sin índice: el INEI no publica valor para esa área.</span><span>(b) Índice reformulado · (c) Índice nuevo en la base dic 2025.</span><span id="t-cmp-note"></span></p>
+</section>
+
+<section id="areas" aria-labelledby="h-areas">
+  <h2 id="h-areas">Áreas geográficas</h2>
+  <ul class="areas" id="lista-areas"></ul>
+</section>
+
+<section id="descargas" aria-labelledby="h-dl">
+  <div class="sec-head"><h2 id="h-dl">Descargas por mes</h2>
+    <p>La R.J. en PDF es la que se adjunta a las valorizaciones. El CSV trae la serie completa hasta ese mes, en formato largo (periodo, código, elemento, área, índice).</p></div>
+  <div class="dl-box"><table class="dl" id="dl"><thead><tr><th>Mes</th><th>Resolución Jefatural</th><th>PDF R.J.</th><th>Excel INEI</th><th>CSV</th><th>Excel de consulta</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<footer>
+  <p>Fuente: Instituto Nacional de Estadística e Informática (INEI), <a href="https://www.inei.gob.pe/estadisticas/indice-tematico/price-indexes/" target="_blank" rel="noopener">Índices de precios</a>, y Resoluciones Jefaturales publicadas en el diario oficial El Peruano. Este sitio no es oficial; ante cualquier diferencia prevalece la R.J. publicada.</p>
+  <p id="actualizado"></p>
+</footer>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+const MN=['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Set','Oct','Nov','Dic'];
+const ML=['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','setiembre','octubre','noviembre','diciembre'];
+const lab=p=>MN[+p.slice(5)]+'-'+p.slice(0,4);
+const labL=p=>ML[+p.slice(5)]+' '+p.slice(0,4);
+const P=D.periodos, last=P[P.length-1];
+const $=id=>document.getElementById(id);
+const fmt=(v,d=2)=>v==null?'(*)':v.toLocaleString('es-PE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const opt=(el,items,sel)=>{el.innerHTML=items.map(([v,t])=>`<option value="${v}"${v==sel?' selected':''}>${t}</option>`).join('')};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const val=(c,a,p)=>{const s=D.v[c]&&D.v[c][a];return s?s[P.indexOf(p)]:null};
+
+$('ultimo').textContent='Último mes publicado: '+labL(last);
+const rjl=D.meses.find(m=>m.periodo===last);
+$('rj-ultimo').innerHTML=rjl&&rjl.rj?`R.J. N° ${esc(rjl.rj)}`:'';
+$('actualizado').textContent='Datos actualizados el '+D.generado+'.';
+
+// Calculadora
+const codes=D.codes;
+const ls=(k,d)=>{try{return localStorage.getItem('iu.'+k)||d}catch(e){return d}};
+const ss=(k,v)=>{try{localStorage.setItem('iu.'+k,v)}catch(e){}};
+opt($('c-cod'),codes.map(c=>[c,c+' · '+D.el[c]]),ls('cod','47'));
+opt($('c-area'),Object.entries(D.areas).map(([a,n])=>[a,'Área '+a+' · '+n]),ls('area','4'));
+const perOpts=P.map(p=>[p,lab(p)]);
+opt($('c-base'),perOpts,P[0]); opt($('c-reaj'),perOpts,last);
+function calc(){
+  const c=$('c-cod').value,a=$('c-area').value,b=$('c-base').value,r=$('c-reaj').value;
+  ss('cod',c);ss('area',a);
+  const io=val(c,a,b),ir=val(c,a,r);
+  $('l-base').textContent=lab(b);$('l-reaj').textContent=lab(r);
+  $('v-base').textContent=fmt(io);$('v-reaj').textContent=fmt(ir);
+  if(io!=null&&ir!=null){const f=ir/io;$('v-fac').textContent=fmt(f,3);
+    $('v-var').textContent=(f>=1?'Variación +':'Variación ')+fmt((f-1)*100,2)+' % entre '+lab(b)+' y '+lab(r);}
+  else{$('v-fac').textContent='—';$('v-var').textContent='Sin índice para esta área en alguno de los meses elegidos.';}
+  spark(c,a,b,r);
+}
+function spark(c,a,b,r){
+  const svg=$('spark'),W=svg.clientWidth||500,H=70,pl=8,pr=8,pt=12,pb=16;
+  const s=(D.v[c]&&D.v[c][a])||[];const pts=s.map((v,i)=>[i,v]).filter(p=>p[1]!=null);
+  if(pts.length<2){svg.innerHTML='';return}
+  const vs=pts.map(p=>p[1]);let lo=Math.min(...vs),hi=Math.max(...vs);if(hi-lo<0.5){lo-=0.25;hi+=0.25}
+  const x=i=>pl+(W-pl-pr)*i/(P.length-1),y=v=>pt+(H-pt-pb)*(1-(v-lo)/(hi-lo));
+  const d=pts.map((p,k)=>(k?'L':'M')+x(p[0]).toFixed(1)+' '+y(p[1]).toFixed(1)).join(' ');
+  const area=d+` L${x(pts[pts.length-1][0]).toFixed(1)} ${H-pb} L${x(pts[0][0]).toFixed(1)} ${H-pb} Z`;
+  const dot=(p,cl)=>{const i=P.indexOf(p),v=s[i];return v==null?'':`<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${cl}" stroke="var(--surface)" stroke-width="2"/>`};
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.innerHTML=`<path d="${area}" fill="var(--brand-soft)"/><path d="${d}" fill="none" stroke="var(--brand)" stroke-width="2"/>`+
+   `<text x="${pl}" y="${H-3}" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${lab(P[0])}</text>`+
+   `<text x="${W-pr}" y="${H-3}" font-size="11" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono,monospace">${lab(last)}</text>`+
+   dot(b,'var(--muted)')+dot(r,'var(--accent)');
+}
+['c-cod','c-area','c-base','c-reaj'].forEach(id=>$(id).addEventListener('change',calc));
+addEventListener('resize',calc);
+
+// Tabla
+opt($('t-mes'),[...P].reverse().map(p=>[p,lab(p)]),last);
+opt($('t-cmp'),[['','Sin comparar'],...P.map(p=>[p,'Variación vs '+lab(p)])],'');
+const A=Object.keys(D.areas);
+function tabla(){
+  const p=$('t-mes').value,q=$('t-buscar').value.trim().toLowerCase(),cmp=$('t-cmp').value,ha=$('c-area').value;
+  document.querySelector('#t thead').innerHTML='<tr><th>Cód.</th><th>Elemento</th>'+A.map(a=>`<th class="${a==ha?'hl':''}" title="${esc(D.areas[a])}">Área ${a}</th>`).join('')+'</tr>';
+  const rows=codes.filter(c=>!q||c.toLowerCase().includes(q)||D.el[c].toLowerCase().includes(q)).map(c=>{
+    return `<tr><td class="cod">${c}</td><td class="el">${esc(D.el[c])}</td>`+A.map(a=>{
+      const v=val(c,a,p),hl=a==ha?' hl':'';
+      if(v==null)return `<td class="na${hl}">(*)</td>`;
+      if(cmp){const o=val(c,a,cmp);if(o==null)return `<td class="na${hl}">—</td>`;const pc=(v/o-1)*100;
+        return `<td class="num ${pc>0.005?'up':pc<-0.005?'dn':''}${hl}">${pc>0?'+':''}${fmt(pc)}%</td>`}
+      return `<td class="num${hl}">${fmt(v)}</td>`}).join('')+'</tr>'}).join('');
+  document.querySelector('#t tbody').innerHTML=rows||`<tr><td colspan="15">Ningún índice coincide con “${esc(q)}”.</td></tr>`;
+  $('t-cmp-note').textContent=cmp?`Valores en % de variación de ${lab(p)} respecto de ${lab(cmp)}.`:'';
+}
+['t-mes','t-cmp'].forEach(id=>$(id).addEventListener('change',tabla));
+$('t-buscar').addEventListener('input',tabla);
+$('c-area').addEventListener('change',tabla);
+
+// Áreas
+$('lista-areas').innerHTML=Object.entries(D.areas).map(([a,n])=>`<li><b>${a}</b><span>${esc(n)}</span></li>`).join('');
+
+// Descargas
+const link=(f,t)=>f?(D.descargas?`<a href="${esc(f)}">${t}</a>`:`<span>${t}</span>`):'<span class="miss">No disponible</span>';
+document.querySelector('#dl tbody').innerHTML=[...D.meses].reverse().map(m=>`<tr><td class="mes">${labL(m.periodo)}</td><td>${m.rj?'N° '+esc(m.rj):'—'}</td>`+
+  `<td>${m.pdf.length?m.pdf.map(f=>link(f.ruta,f.nombre)).join('<br>'):link(null)}</td><td>${link(m.xlsx_inei,'Excel INEI')}</td><td>${link(m.csv,'CSV')}</td><td>${link(m.xlsx_consulta,'Excel')}</td></tr>`).join('');
+
+calc();tabla();
+</script>
