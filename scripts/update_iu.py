@@ -26,7 +26,7 @@ AREAS = {1:"Lambayeque, Piura, Tumbes",2:"Cajamarca, La Libertad",3:"Áncash",4:
 lab = lambda p: f"{MN[int(p[5:])]}-{p[:4]}"
 
 def curl(url, out=None):
-    cmd = ['curl', '-sSL', '--retry', '4', '--retry-delay', '5', '-A', UA, '-f', url]
+    cmd = ['curl', '-sSL', '--retry', '4', '--retry-delay', '10', '--retry-all-errors', '-A', UA, '-f', url]
     if out: cmd += ['-o', out]
     r = subprocess.run(cmd, capture_output=True, check=True)
     return r.stdout.decode('utf-8', 'replace') if not out else out
@@ -194,7 +194,10 @@ def main():
         return backfill(state)
     tmp = tempfile.mkdtemp()
     # 1. Excel INEI: el enlace más reciente de la serie base dic 2025 (prefijo n07_)
-    html = curl(INEI_PAGE)
+    try:
+        html = curl(INEI_PAGE)
+    except Exception as e:
+        print('SIN CAMBIOS (la web del INEI no respondió, se reintenta en la próxima ejecución):', e); return
     links = sorted(set(re.findall(r'(/media/MenuRecursivo/indices_tematicos/[^"\']*indices_unificados[^"\']*\.xlsx)', html)))
     links = [l for l in links if '/n07_' in l] or links
     if not links: sys.exit('ERROR: no encontré el enlace del Excel en ' + INEI_PAGE)
