@@ -1,0 +1,40 @@
+name: Actualizar índices unificados
+
+on:
+  schedule:
+    - cron: "0 14 * * *"   # todos los días, 9:00 a. m. hora de Lima
+  workflow_dispatch:        # botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandas openpyxl
+      - name: Buscar mes nuevo en el INEI
+        id: iu
+        env:
+          IU_BASE: ${{ github.workspace }}/descargas
+        run: |
+          out=$(python3 scripts/update_iu.py)
+          echo "$out"
+          echo "resultado<<EOF" >> "$GITHUB_OUTPUT"; echo "$out" >> "$GITHUB_OUTPUT"; echo "EOF" >> "$GITHUB_OUTPUT"
+      - name: Regenerar la página
+        if: startsWith(steps.iu.outputs.resultado, 'NUEVO')
+        env:
+          IU_BASE: ${{ github.workspace }}/descargas
+        run: python3 scripts/build_site.py --out .
+      - name: Guardar cambios
+        if: startsWith(steps.iu.outputs.resultado, 'NUEVO')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Actualiza índices unificados: ${{ steps.iu.outputs.resultado }}"
+          git push
