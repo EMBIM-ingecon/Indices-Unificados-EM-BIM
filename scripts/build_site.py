@@ -47,6 +47,8 @@ def main():
         rel = lambda f: f'descargas/{m}/{f}'
         pick = lambda pat: next((rel(f) for f in files if re.match(pat, f)), None)
         pdfs = [f for f in files if f.startswith('RJ_') and f.endswith('.pdf')]
+        if any('extracto' in f for f in pdfs) and any('firmado' in f for f in pdfs):
+            pdfs = [f for f in pdfs if 'extracto' in f or 'firmado' in f]
         res = rjs.get(m) or next((re.match(r'RJ_([\d-]+-INEI)', f).group(1) for f in pdfs), '')
         info.append(dict(periodo=m, rj=res,
             pdf=[dict(ruta=rel(f), nombre='Extracto El Peruano' if 'extracto' in f else 'Original firmado' if 'firmado' in f else 'PDF R.J.') for f in pdfs],

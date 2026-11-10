@@ -117,40 +117,81 @@ def build_excel(df, names, meta, out, src_name):
         style(w.sheets['Resoluciones'], 1, 3)
         df[['periodo', 'codigo', 'elemento', 'area', 'indice']].to_excel(w, sheet_name='Datos (largo)', index=False)
 
-def fetch_pdfs(last, res, out):
-    # PDF de la R.J. del mes (gob.pe)
+def has_pdf(out, kind):
+    return any(f.startswith('RJ_') and kind in f for f in os.listdir(out))
+
+def fetch_pdfs(last, res, out, pages=8):
+    """Descarga la R.J. original firmada y el extracto de El Peruano (gob.pe) si aún faltan."""
     pdf_note = ''
     nro = res.split('-')[0].lstrip('0')
+    anio = res.split('-')[1] if res.count('-') >= 2 else (last[:4] if last[5:] != '12' else str(int(last[:4]) + 1))
     mes_txt = f"{MESLARGO[int(last[5:])]}_{last[:4]}"
-    # 2a. R.J. original firmada (gob.pe normas legales del INEI)
-    try:
-        link = None
-        for sh in range(1, 8):
-            h = curl(f'https://www.gob.pe/institucion/inei/normas-legales?sheet={sh}')
-            mm = re.search(rf'/institucion/inei/normas-legales/\d+-0*{nro}-{last[:4] if last[5:]!="12" else int(last[:4])+1}-inei"', h)
-            if mm: link = mm.group(0).rstrip('"'); break
-        if link:
-            p = curl('https://www.gob.pe' + link)
-            u = re.search(r'https://cdn\.www\.gob\.pe/uploads/document/file/\d+/[^"\'?]*\.pdf', p)
-            if u: curl(u.group(0), os.path.join(out, f'RJ_{res}_IU_{mes_txt}_original_firmado.pdf'))
-    except Exception as e:
-        pdf_note += f' (original firmado no disponible: {e})'
-    # 2b. Extracto publicado en El Peruano (página de publicaciones IU en gob.pe)
-    try:
-        g = curl(GOB_PAGE)
-        pdfs = sorted(set(re.findall(r'https://cdn\.www\.gob\.pe/uploads/document/file/\d+/[^"\'?]*\.pdf', g)))
-        cand = [p for p in pdfs if re.search(rf'r-j-n-0*{nro}-{last[:4]}', p)]
-        if cand:
-            curl(cand[0], os.path.join(out, f'RJ_{res}_IU_{mes_txt}_extracto_ElPeruano.pdf'))
-    except Exception as e:
-        pdf_note += f' (extracto El Peruano no disponible: {e})'
-    if not any(f.startswith('RJ_') for f in os.listdir(out)):
-        pdf_note = f'PDF de la R.J. {res} aún no aparece en gob.pe' + pdf_note
+    # a. R.J. original firmada (gob.pe normas legales del INEI)
+    if not has_pdf(out, 'original_firmado'):
+        try:
+            pdf_url = None
+            for sh in range(1, pages):
+                try: h = curl(f'https://www.gob.pe/institucion/inei/normas-legales?sheet={sh}')
+                except Exception: continue
+                for link in sorted(set(re.findall(rf'/institucion/inei/normas-legales/\d+-0*{nro}-{anio}-inei(?=")', h))):
+                    pg = curl('https://www.gob.pe' + link)
+                    u = re.search(r'https://cdn\.www\.gob\.pe/uploads/document/file/\d+/[^"\'?]*resolucion-jefatural[^"\'?]*\.pdf', pg)
+                    if u: pdf_url = u.group(0); break
+                if pdf_url: break
+            if pdf_url:
+                curl(pdf_url, os.path.join(out, f'RJ_{res}_IU_{mes_txt}_original_firmado.pdf'))
+            else:
+                pdf_note += ' (original firmado aún no aparece)'
+        except Exception as e:
+            pdf_note += f' (original firmado no disponible: {e})'
+    # b. Extracto publicado en El Peruano (página de publicaciones IU en gob.pe)
+    if not has_pdf(out, 'extracto'):
+        try:
+            g = curl(GOB_PAGE)
+            pdfs = sorted(set(re.findall(r'https://cdn\.www\.gob\.pe/uploads/document/file/\d+/[^"\'?]*\.pdf', g)))
+            cand = [x for x in pdfs if re.search(rf'r-j-n-0*{nro}-{anio}', x)]
+            if cand:
+                curl(cand[0], os.path.join(out, f'RJ_{res}_IU_{mes_txt}_extracto_ElPeruano.pdf'))
+            else:
+                pdf_note += ' (extracto El Peruano aún no aparece)'
+        except Exception as e:
+            pdf_note += f' (extracto El Peruano no disponible: {e})'
     return pdf_note
+
+def complete(out):
+    return has_pdf(out, 'original_firmado') and has_pdf(out, 'extracto')
+
+def backfill(state):
+    """Completa los dos PDF de todos los meses ya publicados."""
+    rjs = {}
+    for m in sorted(d for d in os.listdir(BASE) if re.fullmatch(r'\d{4}-\d{2}', d)):
+        x = os.path.join(BASE, m, f'indices_unificados_base_dic2025_{m}.xlsx')
+        if os.path.exists(x):
+            try:
+                r = pd.read_excel(x, sheet_name='Resoluciones', dtype=str); rjs.update(zip(r.periodo, r.resolucion))
+            except Exception: pass
+    added = []
+    for m in sorted(d for d in os.listdir(BASE) if re.fullmatch(r'\d{4}-\d{2}', d)):
+        out = os.path.join(BASE, m)
+        res = rjs.get(m) or next((re.match(r'RJ_([\d-]+-INEI)', f).group(1) for f in os.listdir(out) if re.match(r'RJ_[\d-]+-INEI', f)), '')
+        if not res or complete(out): continue
+        before = set(os.listdir(out))
+        note = fetch_pdfs(m, res, out, pages=30)
+        new = set(os.listdir(out)) - before
+        orig = [f for f in os.listdir(out) if f.startswith('RJ_') and 'original_firmado' in f]
+        for f in os.listdir(out):
+            if orig and re.fullmatch(r'RJ_[\d-]+-INEI_IU_[a-z]+_\d{4}\.pdf', f) and \
+               open(os.path.join(out, f), 'rb').read() == open(os.path.join(out, orig[0]), 'rb').read():
+                os.remove(os.path.join(out, f)); new.add('(quitado duplicado ' + f + ')')
+        print(m, res, 'agregados:', ', '.join(sorted(new)) or 'ninguno', note)
+        if new: added.append(m)
+    print(('NUEVO PDF ' + ' '.join(added)) if added else 'SIN CAMBIOS backfill')
 
 def main():
     force = '--force' in sys.argv
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
+    if '--backfill' in sys.argv:
+        return backfill(state)
     tmp = tempfile.mkdtemp()
     # 1. Excel INEI: el enlace más reciente de la serie base dic 2025 (prefijo n07_)
     html = curl(INEI_PAGE)
@@ -164,9 +205,10 @@ def main():
     last = sorted(df.periodo.unique())[-1]
     if not force and state.get('ultimo_periodo') == last:
         out = os.path.join(BASE, last)
-        if os.path.isdir(out) and not any(f.startswith('RJ_') for f in os.listdir(out)):
+        if os.path.isdir(out) and not complete(out):
+            before = set(os.listdir(out))
             note = fetch_pdfs(last, state.get('resolucion', ''), out)
-            if any(f.startswith('RJ_') for f in os.listdir(out)):
+            if set(os.listdir(out)) - before:
                 print('NUEVO PDF', last); return
             print('SIN CAMBIOS', last, note); return
         print('SIN CAMBIOS', last); return
