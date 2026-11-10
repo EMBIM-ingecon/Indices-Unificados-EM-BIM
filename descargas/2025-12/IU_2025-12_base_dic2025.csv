@@ -1,0 +1,1015 @@
+periodo,codigo,elemento,area,indice
+2025-12,01,Aceite y lubricante (b),1,100.0
+2025-12,01,Aceite y lubricante (b),2,100.0
+2025-12,01,Aceite y lubricante (b),3,100.0
+2025-12,01,Aceite y lubricante (b),4,100.0
+2025-12,01,Aceite y lubricante (b),5,100.0
+2025-12,01,Aceite y lubricante (b),6,100.0
+2025-12,01,Aceite y lubricante (b),7,100.0
+2025-12,01,Aceite y lubricante (b),8,100.0
+2025-12,01,Aceite y lubricante (b),9,100.0
+2025-12,01,Aceite y lubricante (b),10,100.0
+2025-12,01,Aceite y lubricante (b),11,100.0
+2025-12,01,Aceite y lubricante (b),12,100.0
+2025-12,01,Aceite y lubricante (b),13,100.0
+2025-12,02,Acero de construcción liso,1,100.0
+2025-12,02,Acero de construcción liso,2,100.0
+2025-12,02,Acero de construcción liso,3,100.0
+2025-12,02,Acero de construcción liso,4,100.0
+2025-12,02,Acero de construcción liso,5,100.0
+2025-12,02,Acero de construcción liso,6,100.0
+2025-12,02,Acero de construcción liso,7,100.0
+2025-12,02,Acero de construcción liso,8,100.0
+2025-12,02,Acero de construcción liso,9,100.0
+2025-12,02,Acero de construcción liso,10,100.0
+2025-12,02,Acero de construcción liso,11,100.0
+2025-12,02,Acero de construcción liso,12,100.0
+2025-12,02,Acero de construcción liso,13,100.0
+2025-12,03,Acero de construcción corrugado,1,100.0
+2025-12,03,Acero de construcción corrugado,2,100.0
+2025-12,03,Acero de construcción corrugado,3,100.0
+2025-12,03,Acero de construcción corrugado,4,100.0
+2025-12,03,Acero de construcción corrugado,5,100.0
+2025-12,03,Acero de construcción corrugado,6,100.0
+2025-12,03,Acero de construcción corrugado,7,100.0
+2025-12,03,Acero de construcción corrugado,8,100.0
+2025-12,03,Acero de construcción corrugado,9,100.0
+2025-12,03,Acero de construcción corrugado,10,100.0
+2025-12,03,Acero de construcción corrugado,11,100.0
+2025-12,03,Acero de construcción corrugado,12,100.0
+2025-12,03,Acero de construcción corrugado,13,100.0
+2025-12,04,Agregado fino,1,100.0
+2025-12,04,Agregado fino,2,100.0
+2025-12,04,Agregado fino,3,100.0
+2025-12,04,Agregado fino,4,100.0
+2025-12,04,Agregado fino,5,100.0
+2025-12,04,Agregado fino,6,100.0
+2025-12,04,Agregado fino,7,100.0
+2025-12,04,Agregado fino,8,100.0
+2025-12,04,Agregado fino,9,100.0
+2025-12,04,Agregado fino,10,100.0
+2025-12,04,Agregado fino,11,100.0
+2025-12,04,Agregado fino,12,100.0
+2025-12,04,Agregado fino,13,100.0
+2025-12,05,Agregado grueso,1,100.0
+2025-12,05,Agregado grueso,2,100.0
+2025-12,05,Agregado grueso,3,100.0
+2025-12,05,Agregado grueso,4,100.0
+2025-12,05,Agregado grueso,5,100.0
+2025-12,05,Agregado grueso,6,100.0
+2025-12,05,Agregado grueso,7,100.0
+2025-12,05,Agregado grueso,8,100.0
+2025-12,05,Agregado grueso,9,100.0
+2025-12,05,Agregado grueso,10,100.0
+2025-12,05,Agregado grueso,11,100.0
+2025-12,05,Agregado grueso,12,
+2025-12,05,Agregado grueso,13,100.0
+2025-12,06,Alambre y cable de cobre desnudo,1,100.0
+2025-12,06,Alambre y cable de cobre desnudo,2,100.0
+2025-12,06,Alambre y cable de cobre desnudo,3,100.0
+2025-12,06,Alambre y cable de cobre desnudo,4,100.0
+2025-12,06,Alambre y cable de cobre desnudo,5,100.0
+2025-12,06,Alambre y cable de cobre desnudo,6,100.0
+2025-12,06,Alambre y cable de cobre desnudo,7,100.0
+2025-12,06,Alambre y cable de cobre desnudo,8,100.0
+2025-12,06,Alambre y cable de cobre desnudo,9,100.0
+2025-12,06,Alambre y cable de cobre desnudo,10,100.0
+2025-12,06,Alambre y cable de cobre desnudo,11,100.0
+2025-12,06,Alambre y cable de cobre desnudo,12,100.0
+2025-12,06,Alambre y cable de cobre desnudo,13,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",1,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",2,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",3,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",4,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",5,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",6,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",7,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",8,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",9,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",10,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",11,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",12,100.0
+2025-12,07,"Alambre y cable tipo TW, THW, LSOH (b)",13,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",1,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",2,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",3,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",4,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",5,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",6,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",7,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",8,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",9,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",10,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",11,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",12,100.0
+2025-12,08,"Alambre y cable tipo WP, CPI (b)",13,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),1,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),2,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),3,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),4,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),5,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),6,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),7,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),8,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),9,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),10,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),11,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),12,100.0
+2025-12,09,Alcantarilla metálica y guardavías (b),13,100.0
+2025-12,10,Aparato sanitario con grifería,1,100.0
+2025-12,10,Aparato sanitario con grifería,2,100.0
+2025-12,10,Aparato sanitario con grifería,3,100.0
+2025-12,10,Aparato sanitario con grifería,4,100.0
+2025-12,10,Aparato sanitario con grifería,5,100.0
+2025-12,10,Aparato sanitario con grifería,6,100.0
+2025-12,10,Aparato sanitario con grifería,7,100.0
+2025-12,10,Aparato sanitario con grifería,8,100.0
+2025-12,10,Aparato sanitario con grifería,9,100.0
+2025-12,10,Aparato sanitario con grifería,10,100.0
+2025-12,10,Aparato sanitario con grifería,11,100.0
+2025-12,10,Aparato sanitario con grifería,12,100.0
+2025-12,10,Aparato sanitario con grifería,13,100.0
+2025-12,11,Artefacto de alumbrado exterior,1,100.0
+2025-12,11,Artefacto de alumbrado exterior,2,100.0
+2025-12,11,Artefacto de alumbrado exterior,3,100.0
+2025-12,11,Artefacto de alumbrado exterior,4,100.0
+2025-12,11,Artefacto de alumbrado exterior,5,100.0
+2025-12,11,Artefacto de alumbrado exterior,6,100.0
+2025-12,11,Artefacto de alumbrado exterior,7,100.0
+2025-12,11,Artefacto de alumbrado exterior,8,100.0
+2025-12,11,Artefacto de alumbrado exterior,9,100.0
+2025-12,11,Artefacto de alumbrado exterior,10,100.0
+2025-12,11,Artefacto de alumbrado exterior,11,100.0
+2025-12,11,Artefacto de alumbrado exterior,12,100.0
+2025-12,11,Artefacto de alumbrado exterior,13,100.0
+2025-12,12,Artefacto de alumbrado interior,1,100.0
+2025-12,12,Artefacto de alumbrado interior,2,100.0
+2025-12,12,Artefacto de alumbrado interior,3,100.0
+2025-12,12,Artefacto de alumbrado interior,4,100.0
+2025-12,12,Artefacto de alumbrado interior,5,100.0
+2025-12,12,Artefacto de alumbrado interior,6,100.0
+2025-12,12,Artefacto de alumbrado interior,7,100.0
+2025-12,12,Artefacto de alumbrado interior,8,100.0
+2025-12,12,Artefacto de alumbrado interior,9,100.0
+2025-12,12,Artefacto de alumbrado interior,10,100.0
+2025-12,12,Artefacto de alumbrado interior,11,100.0
+2025-12,12,Artefacto de alumbrado interior,12,100.0
+2025-12,12,Artefacto de alumbrado interior,13,100.0
+2025-12,13,Asfalto,1,100.0
+2025-12,13,Asfalto,2,100.0
+2025-12,13,Asfalto,3,100.0
+2025-12,13,Asfalto,4,100.0
+2025-12,13,Asfalto,5,100.0
+2025-12,13,Asfalto,6,100.0
+2025-12,13,Asfalto,7,100.0
+2025-12,13,Asfalto,8,100.0
+2025-12,13,Asfalto,9,100.0
+2025-12,13,Asfalto,10,100.0
+2025-12,13,Asfalto,11,100.0
+2025-12,13,Asfalto,12,100.0
+2025-12,13,Asfalto,13,100.0
+2025-12,14,Baldosa acústica,1,100.0
+2025-12,14,Baldosa acústica,2,100.0
+2025-12,14,Baldosa acústica,3,100.0
+2025-12,14,Baldosa acústica,4,100.0
+2025-12,14,Baldosa acústica,5,100.0
+2025-12,14,Baldosa acústica,6,100.0
+2025-12,14,Baldosa acústica,7,100.0
+2025-12,14,Baldosa acústica,8,100.0
+2025-12,14,Baldosa acústica,9,100.0
+2025-12,14,Baldosa acústica,10,100.0
+2025-12,14,Baldosa acústica,11,100.0
+2025-12,14,Baldosa acústica,12,100.0
+2025-12,14,Baldosa acústica,13,100.0
+2025-12,16,Baldosa vinílica y PVC (b),1,100.0
+2025-12,16,Baldosa vinílica y PVC (b),2,100.0
+2025-12,16,Baldosa vinílica y PVC (b),3,100.0
+2025-12,16,Baldosa vinílica y PVC (b),4,100.0
+2025-12,16,Baldosa vinílica y PVC (b),5,100.0
+2025-12,16,Baldosa vinílica y PVC (b),6,100.0
+2025-12,16,Baldosa vinílica y PVC (b),7,100.0
+2025-12,16,Baldosa vinílica y PVC (b),8,100.0
+2025-12,16,Baldosa vinílica y PVC (b),9,100.0
+2025-12,16,Baldosa vinílica y PVC (b),10,100.0
+2025-12,16,Baldosa vinílica y PVC (b),11,100.0
+2025-12,16,Baldosa vinílica y PVC (b),12,100.0
+2025-12,16,Baldosa vinílica y PVC (b),13,100.0
+2025-12,17,Bloque y ladrillo,1,100.0
+2025-12,17,Bloque y ladrillo,2,100.0
+2025-12,17,Bloque y ladrillo,3,100.0
+2025-12,17,Bloque y ladrillo,4,100.0
+2025-12,17,Bloque y ladrillo,5,100.0
+2025-12,17,Bloque y ladrillo,6,100.0
+2025-12,17,Bloque y ladrillo,7,100.0
+2025-12,17,Bloque y ladrillo,8,100.0
+2025-12,17,Bloque y ladrillo,9,100.0
+2025-12,17,Bloque y ladrillo,10,100.0
+2025-12,17,Bloque y ladrillo,11,100.0
+2025-12,17,Bloque y ladrillo,12,100.0
+2025-12,17,Bloque y ladrillo,13,100.0
+2025-12,18,Cable telefónico y de red (b),1,100.0
+2025-12,18,Cable telefónico y de red (b),2,100.0
+2025-12,18,Cable telefónico y de red (b),3,100.0
+2025-12,18,Cable telefónico y de red (b),4,100.0
+2025-12,18,Cable telefónico y de red (b),5,100.0
+2025-12,18,Cable telefónico y de red (b),6,100.0
+2025-12,18,Cable telefónico y de red (b),7,100.0
+2025-12,18,Cable telefónico y de red (b),8,100.0
+2025-12,18,Cable telefónico y de red (b),9,100.0
+2025-12,18,Cable telefónico y de red (b),10,100.0
+2025-12,18,Cable telefónico y de red (b),11,100.0
+2025-12,18,Cable telefónico y de red (b),12,100.0
+2025-12,18,Cable telefónico y de red (b),13,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",1,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",2,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",3,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",4,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",5,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",6,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",7,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",8,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",9,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",10,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",11,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",12,100.0
+2025-12,19,"Cable NYY, N2XY, NPT, N2XOH, N2XSY (b)",13,100.0
+2025-12,20,Cemento asfáltico,1,100.0
+2025-12,20,Cemento asfáltico,2,100.0
+2025-12,20,Cemento asfáltico,3,100.0
+2025-12,20,Cemento asfáltico,4,100.0
+2025-12,20,Cemento asfáltico,5,100.0
+2025-12,20,Cemento asfáltico,6,100.0
+2025-12,20,Cemento asfáltico,7,100.0
+2025-12,20,Cemento asfáltico,8,100.0
+2025-12,20,Cemento asfáltico,9,100.0
+2025-12,20,Cemento asfáltico,10,100.0
+2025-12,20,Cemento asfáltico,11,100.0
+2025-12,20,Cemento asfáltico,12,100.0
+2025-12,20,Cemento asfáltico,13,100.0
+2025-12,21,Cemento Portland e hidráulico (b),1,100.0
+2025-12,21,Cemento Portland e hidráulico (b),2,100.0
+2025-12,21,Cemento Portland e hidráulico (b),3,100.0
+2025-12,21,Cemento Portland e hidráulico (b),4,100.0
+2025-12,21,Cemento Portland e hidráulico (b),5,100.0
+2025-12,21,Cemento Portland e hidráulico (b),6,100.0
+2025-12,21,Cemento Portland e hidráulico (b),7,100.0
+2025-12,21,Cemento Portland e hidráulico (b),8,100.0
+2025-12,21,Cemento Portland e hidráulico (b),9,100.0
+2025-12,21,Cemento Portland e hidráulico (b),10,100.0
+2025-12,21,Cemento Portland e hidráulico (b),11,100.0
+2025-12,21,Cemento Portland e hidráulico (b),12,100.0
+2025-12,21,Cemento Portland e hidráulico (b),13,100.0
+2025-12,24,Cerámica y porcelanato (b),1,100.0
+2025-12,24,Cerámica y porcelanato (b),2,100.0
+2025-12,24,Cerámica y porcelanato (b),3,100.0
+2025-12,24,Cerámica y porcelanato (b),4,100.0
+2025-12,24,Cerámica y porcelanato (b),5,100.0
+2025-12,24,Cerámica y porcelanato (b),6,100.0
+2025-12,24,Cerámica y porcelanato (b),7,100.0
+2025-12,24,Cerámica y porcelanato (b),8,100.0
+2025-12,24,Cerámica y porcelanato (b),9,100.0
+2025-12,24,Cerámica y porcelanato (b),10,100.0
+2025-12,24,Cerámica y porcelanato (b),11,100.0
+2025-12,24,Cerámica y porcelanato (b),12,100.0
+2025-12,24,Cerámica y porcelanato (b),13,100.0
+2025-12,26,Cerrajería (b),1,100.0
+2025-12,26,Cerrajería (b),2,100.0
+2025-12,26,Cerrajería (b),3,100.0
+2025-12,26,Cerrajería (b),4,100.0
+2025-12,26,Cerrajería (b),5,100.0
+2025-12,26,Cerrajería (b),6,100.0
+2025-12,26,Cerrajería (b),7,100.0
+2025-12,26,Cerrajería (b),8,100.0
+2025-12,26,Cerrajería (b),9,100.0
+2025-12,26,Cerrajería (b),10,100.0
+2025-12,26,Cerrajería (b),11,100.0
+2025-12,26,Cerrajería (b),12,100.0
+2025-12,26,Cerrajería (b),13,100.0
+2025-12,27,Detonante,1,100.0
+2025-12,27,Detonante,2,100.0
+2025-12,27,Detonante,3,100.0
+2025-12,27,Detonante,4,100.0
+2025-12,27,Detonante,5,100.0
+2025-12,27,Detonante,6,100.0
+2025-12,27,Detonante,7,100.0
+2025-12,27,Detonante,8,100.0
+2025-12,27,Detonante,9,100.0
+2025-12,27,Detonante,10,100.0
+2025-12,27,Detonante,11,100.0
+2025-12,27,Detonante,12,100.0
+2025-12,27,Detonante,13,100.0
+2025-12,28,Dinamita,1,100.0
+2025-12,28,Dinamita,2,100.0
+2025-12,28,Dinamita,3,100.0
+2025-12,28,Dinamita,4,100.0
+2025-12,28,Dinamita,5,100.0
+2025-12,28,Dinamita,6,100.0
+2025-12,28,Dinamita,7,100.0
+2025-12,28,Dinamita,8,100.0
+2025-12,28,Dinamita,9,100.0
+2025-12,28,Dinamita,10,100.0
+2025-12,28,Dinamita,11,100.0
+2025-12,28,Dinamita,12,100.0
+2025-12,28,Dinamita,13,100.0
+2025-12,30,Dólar más inflación mercado USA,1,100.0
+2025-12,30,Dólar más inflación mercado USA,2,100.0
+2025-12,30,Dólar más inflación mercado USA,3,100.0
+2025-12,30,Dólar más inflación mercado USA,4,100.0
+2025-12,30,Dólar más inflación mercado USA,5,100.0
+2025-12,30,Dólar más inflación mercado USA,6,100.0
+2025-12,30,Dólar más inflación mercado USA,7,100.0
+2025-12,30,Dólar más inflación mercado USA,8,100.0
+2025-12,30,Dólar más inflación mercado USA,9,100.0
+2025-12,30,Dólar más inflación mercado USA,10,100.0
+2025-12,30,Dólar más inflación mercado USA,11,100.0
+2025-12,30,Dólar más inflación mercado USA,12,100.0
+2025-12,30,Dólar más inflación mercado USA,13,100.0
+2025-12,31,Prefabricado de concreto (b),1,100.0
+2025-12,31,Prefabricado de concreto (b),2,100.0
+2025-12,31,Prefabricado de concreto (b),3,100.0
+2025-12,31,Prefabricado de concreto (b),4,100.0
+2025-12,31,Prefabricado de concreto (b),5,100.0
+2025-12,31,Prefabricado de concreto (b),6,100.0
+2025-12,31,Prefabricado de concreto (b),7,100.0
+2025-12,31,Prefabricado de concreto (b),8,100.0
+2025-12,31,Prefabricado de concreto (b),9,100.0
+2025-12,31,Prefabricado de concreto (b),10,100.0
+2025-12,31,Prefabricado de concreto (b),11,100.0
+2025-12,31,Prefabricado de concreto (b),12,100.0
+2025-12,31,Prefabricado de concreto (b),13,100.0
+2025-12,32,Flete terrestre,1,100.0
+2025-12,32,Flete terrestre,2,100.0
+2025-12,32,Flete terrestre,3,100.0
+2025-12,32,Flete terrestre,4,100.0
+2025-12,32,Flete terrestre,5,100.0
+2025-12,32,Flete terrestre,6,100.0
+2025-12,32,Flete terrestre,7,100.0
+2025-12,32,Flete terrestre,8,100.0
+2025-12,32,Flete terrestre,9,100.0
+2025-12,32,Flete terrestre,10,100.0
+2025-12,32,Flete terrestre,11,100.0
+2025-12,32,Flete terrestre,12,100.0
+2025-12,32,Flete terrestre,13,100.0
+2025-12,33,Flete aéreo,1,100.0
+2025-12,33,Flete aéreo,2,100.0
+2025-12,33,Flete aéreo,3,100.0
+2025-12,33,Flete aéreo,4,100.0
+2025-12,33,Flete aéreo,5,100.0
+2025-12,33,Flete aéreo,6,100.0
+2025-12,33,Flete aéreo,7,100.0
+2025-12,33,Flete aéreo,8,100.0
+2025-12,33,Flete aéreo,9,100.0
+2025-12,33,Flete aéreo,10,100.0
+2025-12,33,Flete aéreo,11,100.0
+2025-12,33,Flete aéreo,12,100.0
+2025-12,33,Flete aéreo,13,100.0
+2025-12,34,Gasohol y gasolina (b),1,100.0
+2025-12,34,Gasohol y gasolina (b),2,100.0
+2025-12,34,Gasohol y gasolina (b),3,100.0
+2025-12,34,Gasohol y gasolina (b),4,100.0
+2025-12,34,Gasohol y gasolina (b),5,100.0
+2025-12,34,Gasohol y gasolina (b),6,100.0
+2025-12,34,Gasohol y gasolina (b),7,100.0
+2025-12,34,Gasohol y gasolina (b),8,100.0
+2025-12,34,Gasohol y gasolina (b),9,100.0
+2025-12,34,Gasohol y gasolina (b),10,100.0
+2025-12,34,Gasohol y gasolina (b),11,100.0
+2025-12,34,Gasohol y gasolina (b),12,100.0
+2025-12,34,Gasohol y gasolina (b),13,100.0
+2025-12,37,Herramienta manual,1,100.0
+2025-12,37,Herramienta manual,2,100.0
+2025-12,37,Herramienta manual,3,100.0
+2025-12,37,Herramienta manual,4,100.0
+2025-12,37,Herramienta manual,5,100.0
+2025-12,37,Herramienta manual,6,100.0
+2025-12,37,Herramienta manual,7,100.0
+2025-12,37,Herramienta manual,8,100.0
+2025-12,37,Herramienta manual,9,100.0
+2025-12,37,Herramienta manual,10,100.0
+2025-12,37,Herramienta manual,11,100.0
+2025-12,37,Herramienta manual,12,100.0
+2025-12,37,Herramienta manual,13,100.0
+2025-12,38,Hormigón y afirmado (b),1,100.0
+2025-12,38,Hormigón y afirmado (b),2,100.0
+2025-12,38,Hormigón y afirmado (b),3,100.0
+2025-12,38,Hormigón y afirmado (b),4,100.0
+2025-12,38,Hormigón y afirmado (b),5,100.0
+2025-12,38,Hormigón y afirmado (b),6,100.0
+2025-12,38,Hormigón y afirmado (b),7,100.0
+2025-12,38,Hormigón y afirmado (b),8,100.0
+2025-12,38,Hormigón y afirmado (b),9,100.0
+2025-12,38,Hormigón y afirmado (b),10,100.0
+2025-12,38,Hormigón y afirmado (b),11,100.0
+2025-12,38,Hormigón y afirmado (b),12,
+2025-12,38,Hormigón y afirmado (b),13,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),1,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),2,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),3,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),4,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),5,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),6,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),7,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),8,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),9,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),10,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),11,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),12,100.0
+2025-12,39,Índice de Precios al Consumidor (INEI) (b),13,100.0
+2025-12,40,Loseta y terrazo (b),1,100.0
+2025-12,40,Loseta y terrazo (b),2,100.0
+2025-12,40,Loseta y terrazo (b),3,100.0
+2025-12,40,Loseta y terrazo (b),4,100.0
+2025-12,40,Loseta y terrazo (b),5,100.0
+2025-12,40,Loseta y terrazo (b),6,100.0
+2025-12,40,Loseta y terrazo (b),7,100.0
+2025-12,40,Loseta y terrazo (b),8,100.0
+2025-12,40,Loseta y terrazo (b),9,100.0
+2025-12,40,Loseta y terrazo (b),10,100.0
+2025-12,40,Loseta y terrazo (b),11,100.0
+2025-12,40,Loseta y terrazo (b),12,100.0
+2025-12,40,Loseta y terrazo (b),13,100.0
+2025-12,41,Madera nacional en tiras para piso (b),1,100.0
+2025-12,41,Madera nacional en tiras para piso (b),2,100.0
+2025-12,41,Madera nacional en tiras para piso (b),3,100.0
+2025-12,41,Madera nacional en tiras para piso (b),4,100.0
+2025-12,41,Madera nacional en tiras para piso (b),5,100.0
+2025-12,41,Madera nacional en tiras para piso (b),6,100.0
+2025-12,41,Madera nacional en tiras para piso (b),7,100.0
+2025-12,41,Madera nacional en tiras para piso (b),8,100.0
+2025-12,41,Madera nacional en tiras para piso (b),9,100.0
+2025-12,41,Madera nacional en tiras para piso (b),10,100.0
+2025-12,41,Madera nacional en tiras para piso (b),11,100.0
+2025-12,41,Madera nacional en tiras para piso (b),12,100.0
+2025-12,41,Madera nacional en tiras para piso (b),13,100.0
+2025-12,42,Madera importada para encofrado y carpintería,1,100.0
+2025-12,42,Madera importada para encofrado y carpintería,2,100.0
+2025-12,42,Madera importada para encofrado y carpintería,3,100.0
+2025-12,42,Madera importada para encofrado y carpintería,4,100.0
+2025-12,42,Madera importada para encofrado y carpintería,5,100.0
+2025-12,42,Madera importada para encofrado y carpintería,6,100.0
+2025-12,42,Madera importada para encofrado y carpintería,7,100.0
+2025-12,42,Madera importada para encofrado y carpintería,8,100.0
+2025-12,42,Madera importada para encofrado y carpintería,9,100.0
+2025-12,42,Madera importada para encofrado y carpintería,10,100.0
+2025-12,42,Madera importada para encofrado y carpintería,11,100.0
+2025-12,42,Madera importada para encofrado y carpintería,12,100.0
+2025-12,42,Madera importada para encofrado y carpintería,13,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,1,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,2,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,3,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,4,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,5,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,6,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,7,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,8,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,9,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,10,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,11,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,12,100.0
+2025-12,43,Madera nacional para encofrado y carpintería,13,100.0
+2025-12,44,Madera terciada nacional (b),1,100.0
+2025-12,44,Madera terciada nacional (b),2,100.0
+2025-12,44,Madera terciada nacional (b),3,100.0
+2025-12,44,Madera terciada nacional (b),4,100.0
+2025-12,44,Madera terciada nacional (b),5,100.0
+2025-12,44,Madera terciada nacional (b),6,100.0
+2025-12,44,Madera terciada nacional (b),7,100.0
+2025-12,44,Madera terciada nacional (b),8,100.0
+2025-12,44,Madera terciada nacional (b),9,100.0
+2025-12,44,Madera terciada nacional (b),10,100.0
+2025-12,44,Madera terciada nacional (b),11,100.0
+2025-12,44,Madera terciada nacional (b),12,100.0
+2025-12,44,Madera terciada nacional (b),13,100.0
+2025-12,46,Malla de acero,1,100.0
+2025-12,46,Malla de acero,2,100.0
+2025-12,46,Malla de acero,3,100.0
+2025-12,46,Malla de acero,4,100.0
+2025-12,46,Malla de acero,5,100.0
+2025-12,46,Malla de acero,6,100.0
+2025-12,46,Malla de acero,7,100.0
+2025-12,46,Malla de acero,8,100.0
+2025-12,46,Malla de acero,9,100.0
+2025-12,46,Malla de acero,10,100.0
+2025-12,46,Malla de acero,11,100.0
+2025-12,46,Malla de acero,12,100.0
+2025-12,46,Malla de acero,13,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),1,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),2,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),3,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),4,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),5,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),6,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),7,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),8,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),9,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),10,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),11,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),12,100.0
+2025-12,47,Mano de obra (incluye leyes sociales),13,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),1,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),2,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),3,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),4,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),5,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),6,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),7,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),8,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),9,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),10,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),11,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),12,100.0
+2025-12,47-1,Mano de obra de alta especialización (incluye leyes sociales) (c),13,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),1,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),2,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),3,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),4,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),5,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),6,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),7,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),8,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),9,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),10,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),11,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),12,100.0
+2025-12,48,Maquinaria y equipo de construcción liviano (b),13,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),1,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),2,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),3,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),4,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),5,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),6,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),7,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),8,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),9,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),10,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),11,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),12,100.0
+2025-12,49,Maquinaria y equipo de construcción pesado (b),13,100.0
+2025-12,50,Marco y tapa de fierro (b),1,100.0
+2025-12,50,Marco y tapa de fierro (b),2,100.0
+2025-12,50,Marco y tapa de fierro (b),3,100.0
+2025-12,50,Marco y tapa de fierro (b),4,100.0
+2025-12,50,Marco y tapa de fierro (b),5,100.0
+2025-12,50,Marco y tapa de fierro (b),6,100.0
+2025-12,50,Marco y tapa de fierro (b),7,100.0
+2025-12,50,Marco y tapa de fierro (b),8,100.0
+2025-12,50,Marco y tapa de fierro (b),9,100.0
+2025-12,50,Marco y tapa de fierro (b),10,100.0
+2025-12,50,Marco y tapa de fierro (b),11,100.0
+2025-12,50,Marco y tapa de fierro (b),12,100.0
+2025-12,50,Marco y tapa de fierro (b),13,100.0
+2025-12,51,Perfil de acero al carbono (b),1,100.0
+2025-12,51,Perfil de acero al carbono (b),2,100.0
+2025-12,51,Perfil de acero al carbono (b),3,100.0
+2025-12,51,Perfil de acero al carbono (b),4,100.0
+2025-12,51,Perfil de acero al carbono (b),5,100.0
+2025-12,51,Perfil de acero al carbono (b),6,100.0
+2025-12,51,Perfil de acero al carbono (b),7,100.0
+2025-12,51,Perfil de acero al carbono (b),8,100.0
+2025-12,51,Perfil de acero al carbono (b),9,100.0
+2025-12,51,Perfil de acero al carbono (b),10,100.0
+2025-12,51,Perfil de acero al carbono (b),11,100.0
+2025-12,51,Perfil de acero al carbono (b),12,100.0
+2025-12,51,Perfil de acero al carbono (b),13,100.0
+2025-12,52,Perfil de aluminio,1,100.0
+2025-12,52,Perfil de aluminio,2,100.0
+2025-12,52,Perfil de aluminio,3,100.0
+2025-12,52,Perfil de aluminio,4,100.0
+2025-12,52,Perfil de aluminio,5,100.0
+2025-12,52,Perfil de aluminio,6,100.0
+2025-12,52,Perfil de aluminio,7,100.0
+2025-12,52,Perfil de aluminio,8,100.0
+2025-12,52,Perfil de aluminio,9,100.0
+2025-12,52,Perfil de aluminio,10,100.0
+2025-12,52,Perfil de aluminio,11,100.0
+2025-12,52,Perfil de aluminio,12,100.0
+2025-12,52,Perfil de aluminio,13,100.0
+2025-12,53,Petróleo diésel,1,100.0
+2025-12,53,Petróleo diésel,2,100.0
+2025-12,53,Petróleo diésel,3,100.0
+2025-12,53,Petróleo diésel,4,100.0
+2025-12,53,Petróleo diésel,5,100.0
+2025-12,53,Petróleo diésel,6,100.0
+2025-12,53,Petróleo diésel,7,100.0
+2025-12,53,Petróleo diésel,8,100.0
+2025-12,53,Petróleo diésel,9,100.0
+2025-12,53,Petróleo diésel,10,100.0
+2025-12,53,Petróleo diésel,11,100.0
+2025-12,53,Petróleo diésel,12,100.0
+2025-12,53,Petróleo diésel,13,100.0
+2025-12,54,Pintura látex,1,100.0
+2025-12,54,Pintura látex,2,100.0
+2025-12,54,Pintura látex,3,100.0
+2025-12,54,Pintura látex,4,100.0
+2025-12,54,Pintura látex,5,100.0
+2025-12,54,Pintura látex,6,100.0
+2025-12,54,Pintura látex,7,100.0
+2025-12,54,Pintura látex,8,100.0
+2025-12,54,Pintura látex,9,100.0
+2025-12,54,Pintura látex,10,100.0
+2025-12,54,Pintura látex,11,100.0
+2025-12,54,Pintura látex,12,100.0
+2025-12,54,Pintura látex,13,100.0
+2025-12,55,Pintura temple,1,100.0
+2025-12,55,Pintura temple,2,100.0
+2025-12,55,Pintura temple,3,100.0
+2025-12,55,Pintura temple,4,100.0
+2025-12,55,Pintura temple,5,100.0
+2025-12,55,Pintura temple,6,100.0
+2025-12,55,Pintura temple,7,100.0
+2025-12,55,Pintura temple,8,100.0
+2025-12,55,Pintura temple,9,100.0
+2025-12,55,Pintura temple,10,100.0
+2025-12,55,Pintura temple,11,100.0
+2025-12,55,Pintura temple,12,100.0
+2025-12,55,Pintura temple,13,100.0
+2025-12,56,Plancha de acero LAC,1,100.0
+2025-12,56,Plancha de acero LAC,2,100.0
+2025-12,56,Plancha de acero LAC,3,100.0
+2025-12,56,Plancha de acero LAC,4,100.0
+2025-12,56,Plancha de acero LAC,5,100.0
+2025-12,56,Plancha de acero LAC,6,100.0
+2025-12,56,Plancha de acero LAC,7,100.0
+2025-12,56,Plancha de acero LAC,8,100.0
+2025-12,56,Plancha de acero LAC,9,100.0
+2025-12,56,Plancha de acero LAC,10,100.0
+2025-12,56,Plancha de acero LAC,11,100.0
+2025-12,56,Plancha de acero LAC,12,100.0
+2025-12,56,Plancha de acero LAC,13,100.0
+2025-12,57,Plancha de acero LAF,1,100.0
+2025-12,57,Plancha de acero LAF,2,100.0
+2025-12,57,Plancha de acero LAF,3,100.0
+2025-12,57,Plancha de acero LAF,4,100.0
+2025-12,57,Plancha de acero LAF,5,100.0
+2025-12,57,Plancha de acero LAF,6,100.0
+2025-12,57,Plancha de acero LAF,7,100.0
+2025-12,57,Plancha de acero LAF,8,100.0
+2025-12,57,Plancha de acero LAF,9,100.0
+2025-12,57,Plancha de acero LAF,10,100.0
+2025-12,57,Plancha de acero LAF,11,100.0
+2025-12,57,Plancha de acero LAF,12,100.0
+2025-12,57,Plancha de acero LAF,13,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),1,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),2,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),3,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),4,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),5,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),6,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),7,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),8,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),9,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),10,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),11,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),12,100.0
+2025-12,59,Plancha de fibrocemento y yeso (b),13,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",1,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",2,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",3,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",4,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",5,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",6,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",7,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",8,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",9,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",10,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",11,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",12,100.0
+2025-12,60,"Plancha de poliuretano, poliestireno y termoaislante (b)",13,100.0
+2025-12,61,Plancha galvanizada,1,100.0
+2025-12,61,Plancha galvanizada,2,100.0
+2025-12,61,Plancha galvanizada,3,100.0
+2025-12,61,Plancha galvanizada,4,100.0
+2025-12,61,Plancha galvanizada,5,100.0
+2025-12,61,Plancha galvanizada,6,100.0
+2025-12,61,Plancha galvanizada,7,100.0
+2025-12,61,Plancha galvanizada,8,100.0
+2025-12,61,Plancha galvanizada,9,100.0
+2025-12,61,Plancha galvanizada,10,100.0
+2025-12,61,Plancha galvanizada,11,100.0
+2025-12,61,Plancha galvanizada,12,100.0
+2025-12,61,Plancha galvanizada,13,100.0
+2025-12,62,Poste de concreto,1,100.0
+2025-12,62,Poste de concreto,2,100.0
+2025-12,62,Poste de concreto,3,100.0
+2025-12,62,Poste de concreto,4,100.0
+2025-12,62,Poste de concreto,5,100.0
+2025-12,62,Poste de concreto,6,100.0
+2025-12,62,Poste de concreto,7,100.0
+2025-12,62,Poste de concreto,8,100.0
+2025-12,62,Poste de concreto,9,100.0
+2025-12,62,Poste de concreto,10,100.0
+2025-12,62,Poste de concreto,11,100.0
+2025-12,62,Poste de concreto,12,100.0
+2025-12,62,Poste de concreto,13,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,1,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,2,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,3,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,4,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,5,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,6,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,7,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,8,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,9,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,10,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,11,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,12,100.0
+2025-12,65,Tubería de acero negro y/o galvanizado,13,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,1,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,2,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,3,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,4,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,5,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,6,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,7,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,8,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,9,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,10,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,11,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,12,100.0
+2025-12,66,Tubería de PVC para la red de agua potable y alcantarillado,13,100.0
+2025-12,68,Tubería de cobre,1,100.0
+2025-12,68,Tubería de cobre,2,100.0
+2025-12,68,Tubería de cobre,3,100.0
+2025-12,68,Tubería de cobre,4,100.0
+2025-12,68,Tubería de cobre,5,100.0
+2025-12,68,Tubería de cobre,6,100.0
+2025-12,68,Tubería de cobre,7,100.0
+2025-12,68,Tubería de cobre,8,100.0
+2025-12,68,Tubería de cobre,9,100.0
+2025-12,68,Tubería de cobre,10,100.0
+2025-12,68,Tubería de cobre,11,100.0
+2025-12,68,Tubería de cobre,12,100.0
+2025-12,68,Tubería de cobre,13,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),1,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),2,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),3,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),4,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),5,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),6,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),7,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),8,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),9,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),10,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),11,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),12,100.0
+2025-12,71,Tubería de hierro fundido y dúctil (b),13,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),1,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),2,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),3,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),4,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),5,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),6,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),7,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),8,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),9,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),10,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),11,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),12,100.0
+2025-12,72,Tubería de PVC para redes interiores (b),13,100.0
+2025-12,77,Válvula de bronce y latón (b),1,100.0
+2025-12,77,Válvula de bronce y latón (b),2,100.0
+2025-12,77,Válvula de bronce y latón (b),3,100.0
+2025-12,77,Válvula de bronce y latón (b),4,100.0
+2025-12,77,Válvula de bronce y latón (b),5,100.0
+2025-12,77,Válvula de bronce y latón (b),6,100.0
+2025-12,77,Válvula de bronce y latón (b),7,100.0
+2025-12,77,Válvula de bronce y latón (b),8,100.0
+2025-12,77,Válvula de bronce y latón (b),9,100.0
+2025-12,77,Válvula de bronce y latón (b),10,100.0
+2025-12,77,Válvula de bronce y latón (b),11,100.0
+2025-12,77,Válvula de bronce y latón (b),12,100.0
+2025-12,77,Válvula de bronce y latón (b),13,100.0
+2025-12,78,Válvula de hierro y acero (b),1,100.0
+2025-12,78,Válvula de hierro y acero (b),2,100.0
+2025-12,78,Válvula de hierro y acero (b),3,100.0
+2025-12,78,Válvula de hierro y acero (b),4,100.0
+2025-12,78,Válvula de hierro y acero (b),5,100.0
+2025-12,78,Válvula de hierro y acero (b),6,100.0
+2025-12,78,Válvula de hierro y acero (b),7,100.0
+2025-12,78,Válvula de hierro y acero (b),8,100.0
+2025-12,78,Válvula de hierro y acero (b),9,100.0
+2025-12,78,Válvula de hierro y acero (b),10,100.0
+2025-12,78,Válvula de hierro y acero (b),11,100.0
+2025-12,78,Válvula de hierro y acero (b),12,100.0
+2025-12,78,Válvula de hierro y acero (b),13,100.0
+2025-12,79,Vidrio (b),1,100.0
+2025-12,79,Vidrio (b),2,100.0
+2025-12,79,Vidrio (b),3,100.0
+2025-12,79,Vidrio (b),4,100.0
+2025-12,79,Vidrio (b),5,100.0
+2025-12,79,Vidrio (b),6,100.0
+2025-12,79,Vidrio (b),7,100.0
+2025-12,79,Vidrio (b),8,100.0
+2025-12,79,Vidrio (b),9,100.0
+2025-12,79,Vidrio (b),10,100.0
+2025-12,79,Vidrio (b),11,100.0
+2025-12,79,Vidrio (b),12,100.0
+2025-12,79,Vidrio (b),13,100.0
+2025-12,80,Concreto premezclado,1,100.0
+2025-12,80,Concreto premezclado,2,100.0
+2025-12,80,Concreto premezclado,3,100.0
+2025-12,80,Concreto premezclado,4,100.0
+2025-12,80,Concreto premezclado,5,100.0
+2025-12,80,Concreto premezclado,6,100.0
+2025-12,80,Concreto premezclado,7,100.0
+2025-12,80,Concreto premezclado,8,100.0
+2025-12,80,Concreto premezclado,9,100.0
+2025-12,80,Concreto premezclado,10,100.0
+2025-12,80,Concreto premezclado,11,100.0
+2025-12,80,Concreto premezclado,12,100.0
+2025-12,80,Concreto premezclado,13,100.0
+2025-12,81,Aditivo de concreto y similar (c),1,100.0
+2025-12,81,Aditivo de concreto y similar (c),2,100.0
+2025-12,81,Aditivo de concreto y similar (c),3,100.0
+2025-12,81,Aditivo de concreto y similar (c),4,100.0
+2025-12,81,Aditivo de concreto y similar (c),5,100.0
+2025-12,81,Aditivo de concreto y similar (c),6,100.0
+2025-12,81,Aditivo de concreto y similar (c),7,100.0
+2025-12,81,Aditivo de concreto y similar (c),8,100.0
+2025-12,81,Aditivo de concreto y similar (c),9,100.0
+2025-12,81,Aditivo de concreto y similar (c),10,100.0
+2025-12,81,Aditivo de concreto y similar (c),11,100.0
+2025-12,81,Aditivo de concreto y similar (c),12,100.0
+2025-12,81,Aditivo de concreto y similar (c),13,100.0
+2025-12,82,Alambre y cable de aluminio (c),1,100.0
+2025-12,82,Alambre y cable de aluminio (c),2,100.0
+2025-12,82,Alambre y cable de aluminio (c),3,100.0
+2025-12,82,Alambre y cable de aluminio (c),4,100.0
+2025-12,82,Alambre y cable de aluminio (c),5,100.0
+2025-12,82,Alambre y cable de aluminio (c),6,100.0
+2025-12,82,Alambre y cable de aluminio (c),7,100.0
+2025-12,82,Alambre y cable de aluminio (c),8,100.0
+2025-12,82,Alambre y cable de aluminio (c),9,100.0
+2025-12,82,Alambre y cable de aluminio (c),10,100.0
+2025-12,82,Alambre y cable de aluminio (c),11,100.0
+2025-12,82,Alambre y cable de aluminio (c),12,100.0
+2025-12,82,Alambre y cable de aluminio (c),13,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),1,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),2,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),3,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),4,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),5,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),6,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),7,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),8,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),9,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),10,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),11,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),12,100.0
+2025-12,83,Implemento y accesorio de seguridad (c),13,100.0
+2025-12,84,Madera terciada importada (c),1,100.0
+2025-12,84,Madera terciada importada (c),2,100.0
+2025-12,84,Madera terciada importada (c),3,100.0
+2025-12,84,Madera terciada importada (c),4,100.0
+2025-12,84,Madera terciada importada (c),5,100.0
+2025-12,84,Madera terciada importada (c),6,100.0
+2025-12,84,Madera terciada importada (c),7,100.0
+2025-12,84,Madera terciada importada (c),8,100.0
+2025-12,84,Madera terciada importada (c),9,100.0
+2025-12,84,Madera terciada importada (c),10,100.0
+2025-12,84,Madera terciada importada (c),11,100.0
+2025-12,84,Madera terciada importada (c),12,100.0
+2025-12,84,Madera terciada importada (c),13,100.0
+2025-12,85,Perfil de acero galvanizado (c),1,100.0
+2025-12,85,Perfil de acero galvanizado (c),2,100.0
+2025-12,85,Perfil de acero galvanizado (c),3,100.0
+2025-12,85,Perfil de acero galvanizado (c),4,100.0
+2025-12,85,Perfil de acero galvanizado (c),5,100.0
+2025-12,85,Perfil de acero galvanizado (c),6,100.0
+2025-12,85,Perfil de acero galvanizado (c),7,100.0
+2025-12,85,Perfil de acero galvanizado (c),8,100.0
+2025-12,85,Perfil de acero galvanizado (c),9,100.0
+2025-12,85,Perfil de acero galvanizado (c),10,100.0
+2025-12,85,Perfil de acero galvanizado (c),11,100.0
+2025-12,85,Perfil de acero galvanizado (c),12,100.0
+2025-12,85,Perfil de acero galvanizado (c),13,100.0
+2025-12,86,Pintura esmalte y epóxica (c),1,100.0
+2025-12,86,Pintura esmalte y epóxica (c),2,100.0
+2025-12,86,Pintura esmalte y epóxica (c),3,100.0
+2025-12,86,Pintura esmalte y epóxica (c),4,100.0
+2025-12,86,Pintura esmalte y epóxica (c),5,100.0
+2025-12,86,Pintura esmalte y epóxica (c),6,100.0
+2025-12,86,Pintura esmalte y epóxica (c),7,100.0
+2025-12,86,Pintura esmalte y epóxica (c),8,100.0
+2025-12,86,Pintura esmalte y epóxica (c),9,100.0
+2025-12,86,Pintura esmalte y epóxica (c),10,100.0
+2025-12,86,Pintura esmalte y epóxica (c),11,100.0
+2025-12,86,Pintura esmalte y epóxica (c),12,100.0
+2025-12,86,Pintura esmalte y epóxica (c),13,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),1,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),2,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),3,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),4,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),5,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),6,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),7,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),8,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),9,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),10,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),11,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),12,100.0
+2025-12,87,Plancha con cubierta aluzinc (c),13,100.0
+2025-12,88,Plancha y cobertura plástica (c),1,100.0
+2025-12,88,Plancha y cobertura plástica (c),2,100.0
+2025-12,88,Plancha y cobertura plástica (c),3,100.0
+2025-12,88,Plancha y cobertura plástica (c),4,100.0
+2025-12,88,Plancha y cobertura plástica (c),5,100.0
+2025-12,88,Plancha y cobertura plástica (c),6,100.0
+2025-12,88,Plancha y cobertura plástica (c),7,100.0
+2025-12,88,Plancha y cobertura plástica (c),8,100.0
+2025-12,88,Plancha y cobertura plástica (c),9,100.0
+2025-12,88,Plancha y cobertura plástica (c),10,100.0
+2025-12,88,Plancha y cobertura plástica (c),11,100.0
+2025-12,88,Plancha y cobertura plástica (c),12,100.0
+2025-12,88,Plancha y cobertura plástica (c),13,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),1,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),2,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),3,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),4,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),5,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),6,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),7,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),8,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),9,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),10,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),11,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),12,100.0
+2025-12,89,Poste y tubería de fibra de vidrio (c),13,100.0
+2025-12,90,Tubería de polietileno (c),1,100.0
+2025-12,90,Tubería de polietileno (c),2,100.0
+2025-12,90,Tubería de polietileno (c),3,100.0
+2025-12,90,Tubería de polietileno (c),4,100.0
+2025-12,90,Tubería de polietileno (c),5,100.0
+2025-12,90,Tubería de polietileno (c),6,100.0
+2025-12,90,Tubería de polietileno (c),7,100.0
+2025-12,90,Tubería de polietileno (c),8,100.0
+2025-12,90,Tubería de polietileno (c),9,100.0
+2025-12,90,Tubería de polietileno (c),10,100.0
+2025-12,90,Tubería de polietileno (c),11,100.0
+2025-12,90,Tubería de polietileno (c),12,100.0
+2025-12,90,Tubería de polietileno (c),13,100.0
+2025-12,91,Geomembrana y geotextil (c),1,100.0
+2025-12,91,Geomembrana y geotextil (c),2,100.0
+2025-12,91,Geomembrana y geotextil (c),3,100.0
+2025-12,91,Geomembrana y geotextil (c),4,100.0
+2025-12,91,Geomembrana y geotextil (c),5,100.0
+2025-12,91,Geomembrana y geotextil (c),6,100.0
+2025-12,91,Geomembrana y geotextil (c),7,100.0
+2025-12,91,Geomembrana y geotextil (c),8,100.0
+2025-12,91,Geomembrana y geotextil (c),9,100.0
+2025-12,91,Geomembrana y geotextil (c),10,100.0
+2025-12,91,Geomembrana y geotextil (c),11,100.0
+2025-12,91,Geomembrana y geotextil (c),12,100.0
+2025-12,91,Geomembrana y geotextil (c),13,100.0
+2025-12,92,Flete fluvial (c),1,
+2025-12,92,Flete fluvial (c),2,
+2025-12,92,Flete fluvial (c),3,
+2025-12,92,Flete fluvial (c),4,
+2025-12,92,Flete fluvial (c),5,
+2025-12,92,Flete fluvial (c),6,
+2025-12,92,Flete fluvial (c),7,
+2025-12,92,Flete fluvial (c),8,
+2025-12,92,Flete fluvial (c),9,
+2025-12,92,Flete fluvial (c),10,
+2025-12,92,Flete fluvial (c),11,
+2025-12,92,Flete fluvial (c),12,100.0
+2025-12,92,Flete fluvial (c),13,100.0
+2025-12,93,Bienes y servicios auxiliares (c),1,100.0
+2025-12,93,Bienes y servicios auxiliares (c),2,100.0
+2025-12,93,Bienes y servicios auxiliares (c),3,100.0
+2025-12,93,Bienes y servicios auxiliares (c),4,100.0
+2025-12,93,Bienes y servicios auxiliares (c),5,100.0
+2025-12,93,Bienes y servicios auxiliares (c),6,100.0
+2025-12,93,Bienes y servicios auxiliares (c),7,100.0
+2025-12,93,Bienes y servicios auxiliares (c),8,100.0
+2025-12,93,Bienes y servicios auxiliares (c),9,100.0
+2025-12,93,Bienes y servicios auxiliares (c),10,100.0
+2025-12,93,Bienes y servicios auxiliares (c),11,100.0
+2025-12,93,Bienes y servicios auxiliares (c),12,100.0
+2025-12,93,Bienes y servicios auxiliares (c),13,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),1,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),2,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),3,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),4,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),5,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),6,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),7,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),8,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),9,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),10,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),11,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),12,100.0
+2025-12,94,Encofrado y andamio prefabricado (c),13,100.0
+2025-12,95,Equipamiento permanente de obra (c),1,100.0
+2025-12,95,Equipamiento permanente de obra (c),2,100.0
+2025-12,95,Equipamiento permanente de obra (c),3,100.0
+2025-12,95,Equipamiento permanente de obra (c),4,100.0
+2025-12,95,Equipamiento permanente de obra (c),5,100.0
+2025-12,95,Equipamiento permanente de obra (c),6,100.0
+2025-12,95,Equipamiento permanente de obra (c),7,100.0
+2025-12,95,Equipamiento permanente de obra (c),8,100.0
+2025-12,95,Equipamiento permanente de obra (c),9,100.0
+2025-12,95,Equipamiento permanente de obra (c),10,100.0
+2025-12,95,Equipamiento permanente de obra (c),11,100.0
+2025-12,95,Equipamiento permanente de obra (c),12,100.0
+2025-12,95,Equipamiento permanente de obra (c),13,100.0
